@@ -15,7 +15,6 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
-	gem 'sqlite3'
 	gem 'rspec-rails'
 end
 
@@ -49,7 +48,7 @@ group :development, :test do
 end
 
 group :test do
-	gem 'capybara', '1.1.2'
+	gem 'capybara', '2.2.0'
 end
 
 group :production do
