@@ -15,8 +15,11 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass'
 
+gem 'bcrypt'
+
 group :development, :test do
 	gem 'rspec-rails'
+	gem 'annotate'
 end
 
 # Use jquery as the JavaScript library
