@@ -25,6 +25,7 @@ RSpec.describe User, type: :model do
 	it { should respond_to(:password) }
 	it { should respond_to(:password_confirmation) }
 	it { should respond_to(:authenticate) }
+	it { should respond_to(:remember_token) }
 
 	it { should be_valid }
 
@@ -106,5 +107,10 @@ RSpec.describe User, type: :model do
 	describe "with a passowrd that's too short" do
 		before { @user.password = @user.password_confirmation = "a"*5}
 		it { should be_invalid }
+	end
+
+	describe "remember_token" do
+		before { @user.save }
+		it {@user.remember_token.should_not be_blank}
 	end
 end
