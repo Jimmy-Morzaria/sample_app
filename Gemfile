@@ -11,9 +11,15 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'bcrypt'
+
+gem 'faker'
+
+gem 'will_paginate', '~> 3.0.5'
+
+gem 'bootstrap-will_paginate'
 
 group :development, :test do
 	gem 'rspec-rails'
@@ -44,11 +50,13 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  #gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+gem 'web-console', '~> 2.0', group: :development
 
 group :test do
 	gem 'capybara', '2.2.0'

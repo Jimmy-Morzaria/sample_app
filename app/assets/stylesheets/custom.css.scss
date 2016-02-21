@@ -1,3 +1,4 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 /* mixins, variables, etc. */
@@ -119,6 +120,7 @@ aside {
 	
 	section {
 		padding: 10px 0;
+		margin-top: 20px;
 		border-top: 1px solid $gray-lighter;
 		&:first-child {
 			border: 0;
@@ -134,6 +136,7 @@ aside {
 			text-align: left;
 			letter-spacing: -1px;
 			margin-bottom: 3px;
+			margin-top: 0px;
 		}
 	}
 }
@@ -141,6 +144,10 @@ aside {
 .gravatar {
 		float: left;
 		margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
 }
 
 /* forms */
@@ -170,4 +177,17 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.users {
+	list-style: none;
+	margin: 0;
+	li {
+		overflow: auto;
+		padding: 10px 0;
+		border-top: 1px solid $gray-lighter;
+		&:last-child {
+			border-bottom: 1px solid $gray-lighter;
+		}
+	}
 }
